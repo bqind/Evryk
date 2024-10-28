@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Капсули для прання - Єврик</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 href="../index.html">€врик</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">≡</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Каталог</a></li>
+                    <li><a href="../payments.html">Доставка та Оплата</a></li>
+                    <li><a href="../feedback.html">Зворотній зв’язок</a></li>
+                    <li><a href="../contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <p>Телефон: +380 (99) 484-49-63</p>
+                <p>Адреса: вул. Європейська, 1</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb">
+            <a href="../index.html">Головна</a> > <a href="../category_2/category_2.html">Краса та здоров'я</a> > <span>Дезодорнат для жінок</span>
+        </nav>
+
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="../images/product_4.webp" alt="Дезік">
+            </div>
+            <div class="product-info">
+                <h2>Дезодорнат для жінок Elkos 200 мл Extra dry</h2>
+                <p>Ціна: 60.50 грн</p>
+                <button>Купити в один клік</button>
+                <button>Додати до корзини</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <button class="tab-button" onclick="showTab('description')">Опис</button>
+            <button class="tab-button" onclick="showTab('reviews')">Відгуки</button>
+
+            <div id="description" class="tab-content">
+                <p>
+                    <b>Дезодорнат для жінок Elkos 200 мл Extra dry</b>
+                        <br><b>Відчуття свіжості на цілий день!</b>
+                        <br><b>Захист від неприємного запаху!</b>
+                        <br>Дезодорнат для жінок Elkos 200 мл Extra dry - це ідеальний варіант для тих, хто хоче захистити себе від неприємного запаху протягом цілого дня. 
+                        <br>Завдяки своїй формулі, цей дезодорант забезпечує відчуття свіжості на тривалий час.
+                        <br>Використання дезодорнату Elkos Extra dry дозволяє вам забути про неприємний запах, який може виникати в результаті взаємодії з бактеріями. 
+                        <br>Цей дезодорант містить компоненти, які блокують розвиток бактерій та забезпечують свіжість на цілий день.
+                </p>
+            </div>
+            <div id="reviews" class="tab-content" style="display: none;">
+                <p>Відгуків ще немає, будьте першими!</p>
+                <form class="review-form">
+                    <label>Ім'я:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Відгук:
+                        <textarea name="review" required></textarea>
+                    </label>
+                    <button type="submit">Залишити відгук</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© Семко Богдан, 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

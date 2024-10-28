@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>€врик - Магазин товарів з Європи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>€врик</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">≡</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Каталог</a></li>
+                    <li><a href="payments.html">Доставка та Оплата</a></li>
+                    <li><a href="feedback.html">Зворотній зв’язок</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <p>Телефон: +380 (99) 484-49-63</p>
+                <p>Адреса: вул. Європейська, 1</p>
+            </div>
+        </div>
+    </header>      
+    <main>
+        <section class="feedback-form-container">
+            <h2>Зворотній зв'язок</h2>
+            <form>
+                <label>Ім'я: <input type="text" name="name" required></label>
+                <label>Райони міста:
+                    <select name="district">
+                        <option value="центр">Святошинський район</option>
+                        <option value="північ">Бучанський район</option>
+                        <option value="південь">Шевченковський район</option>
+                    </select>
+                </label>
+                <label>Телефон: <input type="tel" name="phone" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Завантажити фото: <input type="file" name="photo"></label>
+                <label>Коментар: <textarea name="comment" rows="3" required="" style="height: 17px;"></textarea></label>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contacts">
+                <p>© Семко Богдан, 2024</p>
+            </div>
+    </footer>
+</body>
+</html>

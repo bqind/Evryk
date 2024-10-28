@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Капсули для прання - Єврик</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 href="../index.html">€врик</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">≡</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Каталог</a></li>
+                    <li><a href="../payments.html">Доставка та Оплата</a></li>
+                    <li><a href="../feedback.html">Зворотній зв’язок</a></li>
+                    <li><a href="../contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <p>Телефон: +380 (99) 484-49-63</p>
+                <p>Адреса: вул. Європейська, 1</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb">
+            <a href="../index.html">Головна</a> > <a href="category_1.html">Засоби для прання</a> > <span>Гель для прання кольорової білизни</span>
+        </nav>
+
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="../images/product_2.webp" alt="Капсули для прання">
+            </div>
+            <div class="product-info">
+                <h2>Гель для прання кольорової білизни Enzo Deluxe Color 4 л.</h2>
+                <p>Ціна: 1200 грн</p>
+                <button>Купити в один клік</button>
+                <button>Додати до корзини</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <button class="tab-button" onclick="showTab('description')">Опис</button>
+            <button class="tab-button" onclick="showTab('reviews')">Відгуки</button>
+
+            <div id="description" class="tab-content">
+                <p>Гель для прання кольорової білизни Enzo Deluxe Color 4 л. - це надійний засіб для видалення будь-яких плям з вашої білизни. <br>
+                    Цей гель має унікальну формулу, яка дозволяє зберігати яскравість та насиченість кольорів на вашій білизні. <br>
+                    Завдяки своїй концентрованості, цей гель економічний у використанні та дозволяє забезпечити ефективне прання навіть при невеликій кількості засобу.<br>
+                    <br><b>Переваги гелю для прання кольорової білизни Enzo Deluxe Color 4 л.</b><br>
+                    1. Зберігає яскравість та насиченість кольорів на вашій білизні.<br>
+                    2. Економічний у використанні завдяки своїй концентрованості.<br>
+                    3. Ефективно видаляє будь-які плями з вашої білизни.<br>
+
+                </p>
+            </div>
+            <div id="reviews" class="tab-content" style="display: none;">
+                <p>Відгуків ще немає, будьте першими!</p>
+                <form class="review-form">
+                    <label>Ім'я:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Відгук:
+                        <textarea name="review" required></textarea>
+                    </label>
+                    <button type="submit">Залишити відгук</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© Семко Богдан, 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
